@@ -29,35 +29,33 @@ export const Header = () => {
   const upload = base + '/upload';
   const classes = useStyles();
   return (
-    <AppBar position="static" color="transparent" className={classes.appBar}>
-      <Toolbar>
-        <Link href={home} color="inherit" underline="none">
-          <Typography variant="h6" component="div">
-            Yopass
-            <img
-              className={classes.logo}
-              width="40"
-              height="40"
-              alt=""
-              src="yopass.svg"
-            />
-          </Typography>
-        </Link>
-        <Box
-          sx={{
-            marginLeft: 'auto',
-          }}
-        >
-          <Button
-            component={RouterLink}
-            to={isOnUploadPage ? home : upload}
-            variant="contained"
-            color="primary"
-          >
-            {isOnUploadPage ? t('Home') : t('Upload')}
-          </Button>
-        </Box>
-      </Toolbar>
-    </AppBar>
+      <AppBar position="static" color="transparent" className={classes.appBar}>
+          <Toolbar>
+              <Link href={home} color="inherit" underline="none">
+                  <Typography variant="h6" component="div">
+                      <img
+                          className={classes.logo}
+                          height="60"
+                          alt=""
+                          src="1LineSoft-Logo.png"
+                      />
+                  </Typography>
+              </Link>
+              <Box
+                  sx={{
+                      marginLeft: 'auto',
+                  }}
+              >
+                  <Button
+                      component={RouterLink}
+                      to={isOnUploadPage ? home : upload}
+                      variant="contained"
+                      color="primary"
+                  >
+                      {isOnUploadPage ? t('Home') : t('Upload')}
+                  </Button>
+              </Box>
+          </Toolbar>
+      </AppBar>
   );
 };

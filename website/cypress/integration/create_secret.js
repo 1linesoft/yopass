@@ -10,7 +10,7 @@ describe('Create Secret', () => {
 
   it('create secret', () => {
     cy.get('textarea').type('hello world');
-    cy.contains('Encrypt Message').click();
+    cy.contains('Enter the message').click();
 
     cy.get(linkSelector).should(
       'contain',

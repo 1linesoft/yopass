@@ -92,7 +92,7 @@ const CreateSecret = () => {
         onClick={() => clearErrors('secret')}
       />
       <Typography component="h1" variant="h4" align="center">
-        {t('Encrypt message')}
+        {t('Enter the message')}
       </Typography>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Grid container justifyContent="center" paddingTop={1}>
@@ -103,7 +103,7 @@ const CreateSecret = () => {
             margin="dense"
             fullWidth
             label={t('Secret message')}
-            rows="4"
+            rows="20"
             autoFocus={true}
             onKeyDown={onKeyDown}
             placeholder={t('Message to encrypt locally in your browser')}
@@ -125,7 +125,7 @@ const CreateSecret = () => {
                 {loading ? (
                   <span>{t('Encrypting message...')}</span>
                 ) : (
-                  <span>{t('Encrypt Message')}</span>
+                  <span>{t('Enter the message')}</span>
                 )}
               </Button>
             </Box>
