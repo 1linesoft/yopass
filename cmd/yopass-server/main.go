@@ -18,7 +18,7 @@ func init() {
 	pflag.String("address", "", "listen address (default 0.0.0.0)")
 	pflag.Int("port", 1337, "listen port")
 	pflag.String("database", "memcached", "database backend ('memcached' or 'redis')")
-	pflag.Int("max-length", 10000, "max length of encrypted secret")
+	pflag.Int("max-length", 1000000, "max length of encrypted secret")
 	pflag.String("memcached", "localhost:11211", "memcached address")
 	pflag.Int("metrics-port", -1, "metrics server listen port")
 	pflag.String("redis", "redis://localhost:6379/0", "Redis URL")

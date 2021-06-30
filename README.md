@@ -85,7 +85,7 @@ Command line flags:
 $ yopass-server -h
       --address string     listen address (default 0.0.0.0)
       --database string    database backend ('memcached' or 'redis') (default "memcached")
-      --max-length int     max length of encrypted secret (default 10000)
+      --max-length int     max length of encrypted secret (default 1000000)
       --memcached string   Memcached address (default "localhost:11211")
       --metrics-port int   metrics server listen port (default -1)
       --port int           listen port (default 1337)

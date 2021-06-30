@@ -18,7 +18,7 @@ import (
 func main() {
 	maxLength, _ := strconv.Atoi(os.Getenv("MAX_LENGTH"))
 	if maxLength == 0 {
-		maxLength = 10000
+		maxLength = 1000000
 	}
 
 	registry := prometheus.NewRegistry()
